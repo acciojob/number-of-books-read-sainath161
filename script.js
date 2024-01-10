@@ -17,11 +17,12 @@ const library = [
 ];
 
 const numberOfBooksRead = () => {
-  // write your code here
-	const readBooks = library.filter(book => book.readingStatus == true);
-	return readBooks.length;
+  // Use the filter function to get an array of books that have been read
+  const readBooks = library.filter(book => book.readingStatus);
+
+  // Return the length of the filtered array (number of read books)
+  return readBooks.length;
 };
 
 // Do not change the code below
-
 alert(numberOfBooksRead());
